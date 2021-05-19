@@ -1,5 +1,4 @@
 import { FETCH_PARANS_GET, UrlTransactions }  from '../../app/constants';
-import Transaction from '../../app/models/Transaction';
 import { TransactionResponse } from '../../app/transfer/TransactionAssembler';
 import TransactionApi from '../../app/api/TransactionApi';
 
@@ -31,7 +30,6 @@ afterEach(() => {
 });
 
 describe('Given transaction api', () => {
-    let getPromise: Promise<Array<Transaction>>;
 
     describe('When fetch transactions', () => {
         beforeEach(() =>{
